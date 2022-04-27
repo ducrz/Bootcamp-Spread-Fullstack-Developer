@@ -1,0 +1,18 @@
+Construíndo a primeira aplicação
+
+Aula prática
+
+
+Apache + PHP + MYSQL
+
+index.php
+index2.php
+pagina.php
+
+Exercício Final
+
+Construa um site utilizando alguma biblioteca visual jQuery (como Accordion).
+
+desafio.html
+
+

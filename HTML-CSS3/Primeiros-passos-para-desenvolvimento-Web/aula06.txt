@@ -1,0 +1,124 @@
+O que são Stacks?
+
+Objetivos da aula
+
+Stacks
+
+
+O que são stacks?
+
+Pilhas de tecnologias.
+
+Conjunto de softwares necessários e suficientes para executar um aplicativo ou programa.
+
+Linguagens de programação.
+
+Ambientes e ferramentas de interação com APP ou Software.
+
+Capacidades e limitações de perfomance.
+
+Pontos fortes e fracos do App ou Software.
+
+
+Importância
+
+Os líderes de projetos precisam das informações das equipes de desenvolvimento.
+
+Os desenvolvedores precisam saber as limitações e capacidades das ferramentas e ambientes
+que têm disponíveis.
+
+Sistemas, banco de dados, linguagens de programação, protocolos de comunicação.
+
+
+Estratégias de negócios.
+
+Maturidade.
+
+Contratações, planos de mitigações de riscos, aumento da capacidade, uso de dados.
+
+
+Definição de Front-end, Back-end e Fullstack
+
+
+Front-end
+
+
+"Parte da frente"
+
+Site, software, aplicativo, web service.
+
+Interface, UI(User Interface), UX(User Experience).
+
+Lógica de programação, HTML, CSS, JQUERY/JS/AJAX, PHP, Bootstrap e outros frameworks.
+
+
+
+
+Back-end
+
+"Parte de trás"
+
+Servidores, banco de dados.
+
+"meio de campo" entre interface e bancos de dados, regras de negócios, validações.
+
+MYSQL, Oracle, protocolos de comunicação, PHP, Java, node.js.
+
+
+Full Stack
+
+Profissional que sabe trabalhar em todas as camadas das tecnologias de desenvolvimento/execução
+de um app/sw.
+
+
+
+Exemplo Stack Tecnológico Linkedin:
+
+Frontend
+
+JQuery
+
+Backend
+
+Oracle
+MySQL
+Node.js
+GRails = Java=Rails
+Backbone.js
+
+Voldemort
+Espresso
+Hadoop
+
+
+Meta
+Java
+Scala
+JRuby
+JavaScript
+
+The most popular frameworks for frontend development
+
+HTML & CSS
+Boostrap
+JSFoundation
+Susy
+Pure.css
+Bulma
+UIKIT
+Materialize
+{less}
+
+
+JavaScript
+
+Angular
+Vue JS
+React
+Ember
+Next
+
+
+
+
+

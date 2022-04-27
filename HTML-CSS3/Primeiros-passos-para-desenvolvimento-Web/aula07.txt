@@ -1,0 +1,35 @@
+LPs e termos
+
+Objetivos da aula
+
+Principais LPs
+
+
+Principais Linguagens
+
+Interpretadas
+
+Linguagens de Marcação
+
+HTML
+CSS
+
+Linguagens de Programação
+
+Javascript (jQuery, AJAX, diversas libs)
+PHP
+.NET
+ASP
+JAVA
+Ruby (on Rails)
+Python
+Perl
+C
+C++
+C#
+
+Diversos termos comuns - Parte 1
+
+
+
+Diversos termos comuns - Parte 2

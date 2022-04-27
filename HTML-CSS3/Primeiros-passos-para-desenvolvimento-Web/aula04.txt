@@ -1,0 +1,85 @@
+Celular, Internet e Outros Dispositivos
+
+Objetivos da aula
+
+Dados móveis
+
+SMS
+
+Quanto custa, para uma operadora de telefonia móvel enviar um SMS?
+Nada.
+
+O celular troca, naturalmente, alguns bits com as torres de comunicação.
+
+O SMS vai de "carona" nesta mensagens entre torres e os celulares.
+
+
+MMS
+
+Transmissão de mensagens multimídia (áudio, vídeo) por meio de uma espécie de conexão de dados primitiva.
+
+
+Conexões Móveis
+
+1G (analógico): 10kbps
+
+2G (digital) GSM (Global System for Mobile Communication): 97 kbps
+
+GPRS(General Packet Radio Service) / 2,5G: 32-80kbps - dados + voz
+
+EDGE (Enhanced Data Rates for GSM Evolution)/ 2,75G: 128-236 kbps
+
+3G(7 Mbps)
+
+4G(22,1 Mbps)
+
+5G (10 Gbps)
+
+
+
+Wi-Fi
+
+IEEE 802.11: 2,4 Ghz, 2 Mbps
+
+IEEE 802.11a: 5Ghz, 54Mbps
+
+IEEE 802.11b: 2,4 Ghz, 11 Mbps (diminuição de interferência)
+
+IEEE 802.11g: 2,4 Ghz, 54 Mbps
+
+IEEE 802.11n: 2,4 Ghz/ 5 Ghz, 150-600 Mbps
+
+
+
+Segurança
+
+WEP: Chaves de 64 bits e de 128 bits
+
+WPA: chave trocada periodicamente
+
+WPA2 (AES) (802.11I)
+	+ segurança
+	+ processamento
+	
+
+
+
+Bluetooth
+
+Conexão ponto-a-ponto.
+
+Classe Potência máx. Alcance
+1      100 mW        100m
+2      2,4 mW        10m
+3      1 mW          1
+
+
+Versão      Taxa de Transmissão
+1.2         1 Mbps
+2.0+EDR     3 Mbps
+3.0         24 Mbps
+4.0         25 Mbps
+5.0         50 Mbps
+
+
+

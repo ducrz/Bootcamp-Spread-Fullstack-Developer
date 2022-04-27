@@ -1,0 +1,86 @@
+TCP/IP, Portas, Roteadores, Switches e Modems
+
+
+Objetivos da aula
+
+TCP/IP e UDP
+
+TCP/IP
+
+Protocolos de comunicação entre computadores em rede.
+
+Transmission Control Protocol - Protocolo de controle de transmissão.
+
+Internet Protocol - Protocolo de Internet
+
+Modelo de camadas.
+
+4 Camadas:
+
+Física (ex: placa de rede)
+Rede (Ex: IP)
+Transporte (ex: TCP, UDP)
+Aplicação (ex: FTP, SMTP, HTTP)
+
+
+
+TCP VS UDP
+
+
+UDP
+	Rápido
+	Não Confiável
+	"Carro do Ovo"
+	Livestream
+
+TCP
+	Voltado à conexão
+	Handshake
+	Integridade, ordem dos dados
+	Aplicativo de mensagens de texto
+	
+
+
+Portas (do inglês: ports)
+
+Por onde os dados entram e saem.
+
+20: FTP
+22: SSH
+25: SMTP
+53: DNS
+80: HTTP
+443: HTTPS
+
+
+
+
+Roteadores, switches e modems
+
+
+Modem
+
+Modulator-demodulator
+
+Hardware que converte dados em um formato que possa ser transmitido de um computador
+para outro e lido por outro.
+
+
+Roteador
+
+Distribui internet para um ou mais dispositivos de uma rede.
+
+Pode fazer a comunicação entre redes.
+
+Pode ser "burro".
+
+
+Switch
+
+Distribui internet para um ou mais dispositivos de uma rede.
+
+Criado para ser "inteligente".
+
+
+
+
