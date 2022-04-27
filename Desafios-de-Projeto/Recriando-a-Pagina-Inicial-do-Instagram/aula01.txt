@@ -1,0 +1,34 @@
+Instrutora: Gabriela Pinheiro. Github: http://www.github.com/SpruceGabriela
+
+Desafio de Projeto: Recriando a página inicial do Instagram
+
+DESCRIÇÃO
+
+Nesse projeto você terá o desafio de reconstruir a página de login do Instagram. Para isso, é recomendado o uso de CSS com Flexbox, uma das abordagens de posicionamento de elementos mais utilizadas quando se trata de responsividade. Além disso, a expert disponibiliza todo o material necessário em seu GitHub para que você possa utilizá-lo como referência para a sua solução.
+
+PARTE 1
+
+PARTE 2
+
+PARTE 3
+
+PARTE 4
+
+Entendendo o Desafio
+
+Descrição do Desafio
+
+Nesse projeto você terá o desafio de reconstruir a página de login do Instagram. Para isso, é recomendado o uso de CSS com Flexbox, uma das abordagens de posicionamento de elementos mais utilizadas quando se trata de responsividade. Além disso, a expert disponibiliza todo o material necessário em seu GitHub para que você possa utilizá-lo como referência para a sua solução.
+
+Dica: você pode dar um "fork" no repositório disponibilizado pela expert para organizar melhor as suas alterações e evoluções, mantendo uma referência direta ao código original.
+Links Úteis
+
+Repositório no GitHub (implementação de referência)
+
+
+
+Ajustes Feitos
+
+ Mudança de imagens e estilos para padrão consultado em 27/04/2022.
+ Inserção dos links corretos para as lojas de aplicativos.
+ Adaptação para atual página do Instagram quando não logado.
