@@ -15,6 +15,8 @@ Além disso, a expert disponibiliza todo o material necessário em seu GitHub pa
 * Inserção dos links corretos para as lojas de aplicativos.
 * Adaptação para atual página do Instagram quando não logado.
 
+[Acesse aqui o Resultado do Desafio!](https://ducrz.github.io/Bootcamp-Spread-Fullstack-Developer/Desafios-de-Projeto/Recriando-a-Pagina-Inicial-do-Instagram/instagram-dio/index.html)
+
 
 ### Print da Tela do Instagram Real
 ![Tela Real do Instagram](./instagram-dio/img/tela-real-do-instagram.png)
