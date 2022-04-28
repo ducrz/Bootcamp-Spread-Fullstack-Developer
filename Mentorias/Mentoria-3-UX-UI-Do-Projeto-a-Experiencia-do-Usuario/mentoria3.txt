@@ -1,0 +1,284 @@
+Instrutor: Rodrigo Alexandre - Product Designer.
+
+
+Host: Denilson Bonatti. Github: https://github.com/denilsonbonatti
+
+Live do Dia 27/04/2022: https://www.youtube.com/watch?v=FRhbQ1gci2Y
+
+
+Mentoria #3: UX/UI - Do Projeto a experiência do Usuário
+
+
+Foco em Introdução ao UX
+
+
+Conceitos e Funções do Designer UX/UI.
+
+O que é a experiência do Usuário, como ela é importante e como ela concta-se diretamente
+com o mundo dos negócios.
+
+
+Experiência do Usuário
+
+Experiência do usuário não contempla tela bonita.
+Para isto temos a disciplina do design que é chamado de UI (User Interface).
+
+Ela está muito mais próxima do design gráfico do que do produto propriamente dito.
+
+Porém, ela é tão importante quanto o UX, porque um elemento gráfico mal adicionado,
+pode derrubar totalmente o conceito de usabilidade proposto pelo UX.
+
+Exemplo de UI mal projetado.
+
+#FEFEFE
+#FAFAFC
+
+Duas cores bem próximas.
+Em um monitor de alta definição é possível notar a diferença,
+em um monitor com uma resolução menor, tudo é branco.
+
+
+O design do produto, a experiência do usuário, vão muito além do que só fazer coisas bonitas.
+
+Eles têm a ver com a experiência que o usuário tem quando ele entra em contato com o produto.
+
+
+
+Experiência do Usuário em um Caixa Eletrônico
+
+Então, se você já foi em um caixa eletrônico e sacou dinheiro nele,
+você teve uma experiência de usuário.
+
+
+Não importa se foi agradável, rápido ou fácil o processo.
+
+
+Experiência do Usuário em um Restaurante
+
+Se você foi em um restaurante que tinha um guardanapo um pouco fino, você teve
+uma experiência diferente neste restaurante.
+
+
+Experiência do Usuário no Spotify
+
+Se você for ouvir uma música no Spotify e ele selecionar as músicas que você poderia gostar de ouvir,
+baseado nas últimas músicas que você ouviu, ele está trabalhando a sua experiência de usuário.
+
+
+
+E o que á UX?
+
+A experiência do usuário, não é uma coisa, ela não é um produto.
+
+A experiência do usuário, ela acontece quando uma pessoa entra em contato com um
+determinado produto ou serviço.
+
+Então, uma tela ser bonita ou feia, não quer dizer que vai deixar a experiência 
+do usuário boa ou ruim.
+
+Claro que uma tela mais bonita, é mais propensa a gerar uma experiência melhor do que uma tela mais feia.
+
+Mas, existem diversos casos em que uma tela mais feia, gera uma experiência melhor do que uma bonita,
+porque ela ajuda o usuário a completar a sua tarefa que precisa precisa de forma mais fácil.
+
+Então, a experiência do usuário é exatamente isto.
+
+
+
+Design Thinking
+
+O que é Design Thinking? Por onde eu começo?
+
+Por incrível que pareça, não existe o Design Thinking sem um ator principal:
+o Duplo Diamante!
+
+
+O Duplo Diamante
+
+Imersão  Definição  Ideação  Prototipação
+
+
+Problema,                     Solução
+Gatilho,                      Resultado
+Desafio                       Entrega
+
+
+
+Vamos conhecer o Double Diamong ou Duplo Diamante.
+
+Esta é uma técnica que é a base do Design Thinking.
+
+
+
+Duplo Diamantes
+
+Ela trata de conseguir gerar ideias de forma estruturada,
+de tirar aquilo que está na sua cabeça de uma maneira que você
+possa reaproveitar e não simplesmente desperdiçar como ocorre
+muitas vezes em sessões de brainstorms.
+
+É uma ferramenta que te ajuda seguidamente a tentar melhorar cada vez mais
+as ideias que você tem.
+
+Ele vai aguçar a sua criatividade, vai dar um turbo mental no seu cérebro e vai
+te ajudar a tomar decisões melhores, baseado em análise prévia do que você
+já está inserido.
+
+Esta ferramenta vai te ajudar muito em trabalhar em equipe.
+Ela não funciona para ser utilizada sozinho.
+
+Você vai ganhar muito mais se você conseguir trazer pessoas para te ajudar a 
+idealizar aquilo que você está querendo construir.
+
+Por fim, é uma ferramenta para você tentar entender de verdade o que as pessoas precisam
+para você não cair naquele problema de primeiro, construir algo e depois fazer com que
+as pessoas gostem do que você construiu.
+
+A ideia é construir algo que as pessoas querem.
+
+Isto é o que forma o Design Thinking.
+
+São quatro etapas que vão de ajudar a descobrir coisas, definir melhor,
+desenvolver e entregá-las para o seu usuário final.
+
+Na primeira etapa, é uma parte mais de pesquisa (reserarch), você levantar insights, de você começar a colocar
+as várias ideias que estão na mente para fora.
+
+Na fase de definição, você vai organizar um pouco melhor a ideia de forma a agrupar aquilo
+que é mais parecido e de forma a definir o que é mais relevante e viável dentro do
+seu negócio.
+
+A terceira etapa, vai te ajudar a trabalhar um pouco mais cada uma das ideias que você definiu como
+viáveis na etapa anterior e a última etapa vai te ajudar a entregar o
+melhor que estas ideias têm em comum.
+
+Design Thinking é uma ferramenta de trabalho totalmente colaborativa, começando
+pelo seu Double Diamond.
+
+Esta técnica assim como tudo que passamos anteriormente, é centrado no ser humadno, ou seja,
+não é lógica. Cada ser humano é diferente do outro, e é aí que mora a graça.
+
+
+
+E o que é Design Thinking?
+
+
+O Design Thinking é centrado no ser humano, altamente colaborativo, experimental, otimista e visual.
+Assim, é preciso acreditar que pode-se fazer a diferença, desenvolvendo
+um processo intencional para chegar ao novo, impactar positivamente 
+as pessoas e criar soluções de negócio inovadores.
+
+
+O Conceito do Design Thinking?
+
+Desejo (pessoas)    ->
+ 
+Viabilidade (negócio)  -> Solução
+
+Possibilidades (técnica) ->
+
+
+Funcionando na prática
+
+Baseado em fatos reais, aplicação do Design Thinking com muito, mas muito sucesso!
+
+
+Funcionando na Prática
+
+Doug Dietz, designer industrial da GE Healthcare.
+
+Ele é o responsável pelo desenho da máquina de ressonância magnética.
+
+
+Claustrofobia
+
+Barulhenta, necessário protetor de ouvidos e demora 15-30 minutos para concluir o processo.
+
+Revolução maravilhosa da medicina, mas a experiência do usuário é extremamente terrível.
+
+Quem sofria mais?
+
+Adultos com claustrofobia.
+
+Crianças.
+
+
+Problema x Solução
+
+Grande problema. A tecnologia era maravilhosa, revolucionária.
+
+Resultados fantásticos.
+
+Mas qual era o problema? Era com crianças.
+
+
+O lado humano na prática
+
+DOug Dietz teve que imergir no problema para encontrar a solução.
+
+Teve que colocar-se no lugar do outro para entender.
+
+Teve que ter empatia para entender como solucionar o problema.
+
+Ele foi a campo para acompanhar os processos e para entender o problema a fundo.
+
+
+
+A Solução
+
+Observando tudo em campo, o que ele fez, foi simplesmente criar uma história para isso.
+
+Sem mexer na tecnologia. Ele tinha a missão de melhorar a experiência do usuŕio.
+
+O que ele fez?
+
+
+O brilhantismo de um gênio!
+
+Ele simplesmente criou um ambiente amigo.
+
+Sem mexer em nada na máquina.
+
+Ele criou um ambiente que favorecesse uma melhor experiência do usuário.
+
+E ele só conseguiu fazer isso, por que ele imergiu. Foi a campo.
+
+Transformou a sala inteira em uma "brincadeira de criança".
+
+
+Ferramentas
+
+Diversas ferramentas que são usadas por designers.
+
+Figma;
+Adobe XD;
+InVision.
+
+
+Figma
+
+Segurança e robustez no layout assim como suas animações.
+
+Funciona diretamente nas nuvens, possível trabalhar diversos designer ao mesmo tempo.
+
+Além da área de produção de layouts, o Figma traz um produto chamado FigJam, 
+onde você pode trabalhar todo um fluxo do usuário,exatamente como o Mito trabalha.
+
+Possível trabalhar em qualquer ambiente, via app ou diretamente no browser.
+
+
+Adobe XD
+
+Um dos primeiros apps para designers UX/UI.
+
+Em alguns pontos perde para seu principal concorrente.
+
+Ter que ficar atualizando o link do mock-up toda vez que atualiza o layout.
+
+
+
+
+
+
+
+
