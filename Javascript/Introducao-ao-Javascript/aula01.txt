@@ -1,0 +1,48 @@
+Instrutora Stephany Nusch. Github: https://github.com/stebsnusch
+
+Introdução ao JavaScript
+
+O que é Javascript?
+
+Apresentação do curso
+
+História, Evolução e Aplicações
+
+História
+
+Leve
+Interpretada
+Baseada em Protótipos
+Multiparadigma (Orientação a Objetos, Funcional ou Estruturada)
+Comumente utilizada em aplicações
+web client-side
+Segue o padrão ECMAScript
+
+
+Evolução
+
+ECMAScript 1 - First Edition. 1997
+
+ECMAScript 2 - Editorial changes only. 1998
+
+ECMAScript 3 - Regular Expressions. try/catch. 1999
+
+ECMAScript 4 - Never released.
+
+ECMAScript 5 - "stric mode", JSON support, String.trim(), Array.isArray(), Array iteration Methods. 2009.
+
+ECMAScript 6 - 2015
+
+https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+
+
+
+Aplicações
+
+Web
+Mobile
+Smartwatches
+Games
+Internet of Things
+APIs
+

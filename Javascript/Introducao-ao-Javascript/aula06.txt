@@ -1,0 +1,26 @@
+Mercado de Trabalho
+
+Frameworks
+
+Frameworks e bibliotecas
+
+Vanilla JS - Javascript puro.
+
+VueJS
+Angular
+React (Biblioteca)
+jQuery
+
+
+
+Mercado de trabalho
+
+stackoverflow
+MDN Web docs
+W3C
+GIT / GitHub
+Linkedin
+Youtube
+Twitter
+DIO
+

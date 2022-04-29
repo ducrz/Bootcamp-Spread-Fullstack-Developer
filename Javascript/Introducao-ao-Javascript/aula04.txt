@@ -1,0 +1,32 @@
+Javascript em uma página Web
+
+Estrutura de projeto
+
+Folder DIO
+
+Inserindo javascript numa página HTML
+
+
+Interagindo com os elementos do DOM
+
+DOM
+
+Document Object Model
+Estrutura dos elementos dentro da janela
+
+Árvore de elementos DOM.
+
+No Console:
+
+documento.getElementsByTagName('h1');
+
+
+var heading 1  = documento.getElementsByTagName('h1')[0];
+
+heading1
+
+heading1.style.color= 'red'
+
+
+
+

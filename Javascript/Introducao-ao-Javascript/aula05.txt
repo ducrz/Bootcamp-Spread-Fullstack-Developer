@@ -1,0 +1,17 @@
+Colocando em Prática
+
+Criando um contador
+
+Folder contador.
+
+
+Resolução: criando um contador.
+
+
+Desafio: To-do list
+
+Folder: to-do-list.
+
+Resolução: To-do List.
+
+

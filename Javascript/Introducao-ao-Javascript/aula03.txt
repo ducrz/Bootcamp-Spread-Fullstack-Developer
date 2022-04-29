@@ -1,0 +1,21 @@
+Console
+
+Executando um arquivo .js
+
+
+Console numa página da web
+
+DevTools: CTRL + SHIFT + i
+
+
+Console no terminal
+
+
+NodeJS: https://nodejs.org/en/
+
+No VsCode, terminal: CTRL + SHIFT + ´
+
+
+terminal.js
+
+node terminal.js
