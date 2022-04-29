@@ -1,0 +1,31 @@
+Colocando em Prática.
+
+Na prática - Parte 1
+
+playground.js
+
+node playground.js
+
+Na prática - Parte 2
+
+playground2.js
+
+node playground2.js
+
+Na prática - Parte 3
+
+playground3.js
+
+node playground3.js
+
+
+Na prática - Parte 4
+
+playground4.js
+
+node playground4.js
+
+playground5.js
+
+node playground5.js
+

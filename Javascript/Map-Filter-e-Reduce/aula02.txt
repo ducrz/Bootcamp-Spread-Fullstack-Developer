@@ -1,0 +1,28 @@
+Filter
+
+Filter e Síntaxe
+
+O que é?
+
+Cria um novo array
+Não modifica o array original
+
+Síntaxe
+
+Parâmetros
+
+array.filter(callback, thisArg)
+
+Callback: função a ser executada em cada elemento
+
+thisArg (opcional): valor de ‘this’ dentro da função de callback
+
+
+Exemplo
+
+
+const frutas = ['maça fuji', 'maça verde', 'laranja', 'abacaxi'];
+
+frutas.filter((fruta) => fruta.includes('maça'));
+
+// retorno: ['maça fuji', 'maça verde'];
