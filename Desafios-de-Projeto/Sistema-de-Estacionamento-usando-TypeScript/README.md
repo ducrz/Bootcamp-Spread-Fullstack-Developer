@@ -18,6 +18,7 @@ Você já se perguntou porque o Typescript está cada vez mais sendo utilizado e
 [Acesse aqui o Resultado do Desafio!](https://ducrz.github.io/Bootcamp-Spread-Fullstack-Developer/Desafios-de-Projeto/Sistema-de-Estacionamento-usando-TypeScript/estacionamento/view/index.html)
 
 
+
 ### Print da Tela do Desafio
 ![Tela do Desafio](./estacionamento/view/img/tela.png)
 
