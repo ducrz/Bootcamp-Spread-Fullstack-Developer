@@ -1,0 +1,40 @@
+Selecionando Elementos
+
+Métodos
+
+Estrutura HTML
+
+
+tag: ex <body>
+
+classe: exemplo class="textos"
+
+id: exemplo id="titulo"
+
+
+Selecionando os elementos de uma página.
+
+document.getElementById('titulo');
+// <h1 id="titulo">Minha página</h1>
+
+
+document.getElementByTagName('li');
+
+document.getElementsByClassName('textos');
+
+document.querySelectorAll('.primeira-classe .segunda-classe');
+
+
+documento.querySelectorAll('li .opcao');
+
+
+Adicionar e deletar
+
+
+Método                             Descrição
+document.createElement(element)    Cria um novo elemento HTML
+document.removeChild(element)      Remove um elemento
+document.appendChild(element)      Adiciona um elemento
+document.replaceChild(new, old)    Substitui um elemento
+
+

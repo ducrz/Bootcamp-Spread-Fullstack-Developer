@@ -1,0 +1,23 @@
+Instrutora: Stephany Nusch
+
+Manipulando a D.O.M. com JavaScript
+
+O que é D.O.M. e D.O.M vs B.O.M.
+
+
+Document Object Model
+
+O DOM HTML é um padrão de como acessar e modificar elementos HTML de uma página.
+
+
+DOM VS BOM
+
+BOM - Browser Object Model
+
+
+
+
+		windows
+document      history        location        screen       navigator
+
+Tudo que está dentro do objeto windows.

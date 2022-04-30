@@ -1,0 +1,53 @@
+Eventos
+
+Tipos e Acionando eventos
+
+Qualquer tipo de ação que um usuário faz em uma página.
+
+
+Tipos de eventos
+
+
+Eventos do mouse
+
+mouseover, mouseout
+
+
+Eventos de clique
+
+click, dbclick
+
+Eventos de atualização
+
+Change, Load
+
+
+Acionando Eventos
+
+
+Event Listener
+
+Diretamente no Javascript, cria um evento que vai ser acionado no momento
+em que o usuário realizar determinada ação.
+
+const botao = document.getElementById("meuBotao");
+
+botao.addEventListener("click", outraFuncao);
+
+
+Atributo HTML
+
+
+Especifica a função a ser chamada diretamente no elemento HTML.
+
+<h1 onclick="mudaTexto(this)"> Clique Aqui!</h1>
+<script>
+function mudaTexto(id){
+	id.innerHTML = "Mudei!";
+
+}
+
+</script>
+
+
+Atividade prática
