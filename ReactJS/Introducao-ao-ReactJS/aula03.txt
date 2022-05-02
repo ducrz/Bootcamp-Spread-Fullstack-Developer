@@ -1,0 +1,68 @@
+Conceitos aplicados aos tipos de dados e condições da biblioteca
+
+Renderização Condicional
+
+"Em React, você pode criar componentes distintos que encapsulam o comportamento
+que você precisa.
+Então, você pode renderizar apenas alguns dos elementos, dependendo do estado
+da sua aplicação".
+
+https://pt-br.reactjs.org/docs/conditional-rendering.html
+
+Variáveis de elementos
+
+If inline com o Operador Lógico &&
+
+I-Else inline com Operador Condicional
+
+Evitando que um componente seja renderizado.
+
+
+Folder lesson-03/conditional-renderization
+
+
+
+Listas e Chaves
+
+Renderizando Múltiplos Componentes.
+
+Componente de Lista Básico.
+
+Chaves
+
+Extraindo Componentes com Chaves.
+
+Chaves devem ser únicas apenas entre Elementos Irmãos.
+
+Folder lesson-03/list-and-keys
+
+Manipulando Eventos
+
+Manipular eventos em elementos React é muito semelhante a manipular eventos em elementos do DOM.
+Existem algumas diferenças sintáticas:
+
+Eventos em React são nomeados usando camelCase ao invés de letras maiúsculas.
+
+Com o JSX você passa uma função como manipulador de eventos ao invés de um texto.
+
+Folder lesson-03/events-manipulation
+
+Conheça dicas para pensar do jeito ReactJS
+
+
+Pensando do Jeito React
+
+Comece com um Mock.
+
+Separe a UI em uma Hierarquia de Componentes;
+
+Cria uma versão estática em React.
+
+Identifique a Representação Mínima (mas completa) do State da UI.
+
+Identifique onde o State deve Ficar.
+
+Adicione o Fluxo de Dados Inverso.
+
+
+

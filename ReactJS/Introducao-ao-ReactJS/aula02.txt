@@ -1,0 +1,119 @@
+Integrando webpack ao desenvolvimento com ReactJS
+
+O que é webpack?
+
+É um module bundler (um empacotador de módulos para aplicações JS).
+
+Gerar bundler que será utilizado no HTML, em ES5.
+
+Link Oficial: https://webpack.js.org
+
+
+Suporte a:
+
+Fontes;
+CSS;
+Imagens;
+HTML;
+JS
+Plugins
+
+
+Aprenda a configurar o webpack
+
+Configuração.
+
+Principais Conceitos do Webpack:
+
+Entry - Utilizando grafo, o Webpack precisa de um ponto de entrada para buscar
+todos os módulos e dependências.
+
+Output - É para determinar quais são os bundlers que o Webpack irá emitir.
+
+Loaders - É para permitir que o Webpack gerencie arquivos que não são Javascript.
+
+Plugins - Plugins podem ser utilizados para otimização de pacotes, minificação, injeção de scripts
+e muito mais.
+
+
+Mode - Utilizados para abordagem de configuração zero.
+É possível configurar módulos como production, development ou none.
+
+Production - Faz otimizações internas.
+
+Development - É executado com três plugins: UglifyJsPlugin, ModuloConcatenationPLugin
+e NoEmitOnErrorsPlugin.
+
+
+Criação do arquivo webpack.config.js
+
+
+npm i -D webpack webpack-cli
+
+npm install --save-dev webpack webpack-cli
+
+"build": "webpack --mode production"
+
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
+Criação do arquivo .babelrc
+
+
+{
+	"presets":[
+		"@babel/preset-env"	
+	]
+}
+
+
+npm i react react-dom
+npm i -D babel-preset-react
+
+{
+	"presets": [
+		"@babel/preset-env",
+		"@babel/preset-react"
+	]
+}
+
+
+src/index.js
+
+src/App.jsx
+
+import React from "react"
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(<App />, document.getElementById("app"));
+
+
+npm i -D html-webpack-plugin html-loader
+
+src/index.html
+
+
+Criando um Dev Server
+
+npm i -D webpack-dev-server
+
+
+"scripts": {
+	"start:dev": "webpack-dev-server"
+}
+
+
+npm run start:dev
+
+Instalação e configuração do ESLint
+
+
+EsLint
+
+Configuração
+
+npm install --save-dev eslint babel-eslint eslint-plugin-react eslint-watch
+
+
+https://eslint.org
+

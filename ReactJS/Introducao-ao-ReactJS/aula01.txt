@@ -1,0 +1,232 @@
+Instrutor: Bruno Carneiro. Github: https://github.com/Tautorn
+
+Introdução ao ReactJS
+
+Conheça a tecnologia ReactJS
+
+React
+
+História e Conceitos
+
+Uma biblioteca JavaScript para criar interfaces de usuário: https://pt-br.reactjs.org
+
+Versão atual 18.1.0
+
+Criado em 2011 por Jodan Walke no Facebook.
+
+Baseado no XHP, uma framework para criação de HTML no PHP.
+
+Utilizado no mural de notícias da ferramenta.
+
+2012 - Utilizado no Instagram
+
+2013 - Anúncio para liberação OpenSource na JSConf US.
+
+2015- React Native
+
+2015 - UWP (Universal Windows Platform)
+
+
+REACT é uma biblioteca e não um framework.
+
+A principal função é a criação da interface para o usuário.
+
+
+Web Frameworks: https://insights.stackoverflow.com/survey/2021#web-frameworks
+
+This year, React.js surpassed jQuery as the most commonly used web framework.
+
+Most Popular Technologies
+
+JavaScript 64.96%.
+
+https://insights.stackoverflow.com/survey/2021#programming-scripting-and-markup-languages
+
+
+React é uma linguagem declarativa.
+
+
+Declarativa vs Imperativa.
+
+O React está preocupado apenas com o que é exibido na interface do usuário.
+
+React é baseado em componentes.
+
+Pode ser utilizado em qualquer lugar.
+
+Utilizado em grandes player do mercado.
+
+
+
+
+
+Aprenda a configurar o ReactJS
+
+React Create App.
+
+React Scripts.
+
+Tasks Runners e Bundler Sizers.
+
+Atualizando Node.js:
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+
+Criando primeiro projeto
+
+npm init
+
+npm install --save react@18.1.0 react-dom@18.1.0 react-scripts@5.0.1
+
+Package.json - Todas as configuações e dependências do projeto.
+
+NPM - Gerenciador de dependências do javascript
+
+
+React é uma SPA - Single Page Application.
+
+
+O que é JSX?
+
+Linguagem de marcação criada para poder utilizar/criar elementos primitivos HTML,
+criar toda a estrutura HTML, e ter todo o "poder" do Javascript dentro dele, ou seja,
+você pode executar funções Javascript, ter variáveis dentro do JSX.
+
+
+const element = <h1>Hello, World!</h1>;
+
+Nem HTML e nem uma string!
+
+React não separa as tecnologias colocando marcação em arquivos separados, e sim,
+separa conceitos e mantém o código pouco acoplado chamando-os de componentes.
+
+Não é obrigatório a utilização do JSX.
+
+Sintax Suggar(função) para React.createElement.
+
+
+O Browser não interpreta o JSX, para isso é necessário um transpilador para
+que a aplicação possa entender o código. O mais utilizado é o Babel.
+
+Babel: https://babeljs.io/docs/en/babel-plugin-transform-react-jsx
+
+
+Folder lesson01/jsx
+
+npm install
+
+npm start
+
+
+Renderizando elementos
+
+
+Renderização de Elementos;
+
+React DOM;
+Não trabalha diretamente no DOM, utiliza Virtual DOM, onde controla tudo que está no DOM.
+
+Nós Raíz.
+
+React "pensa" em como a interface deve estar a cada momento, ao invés de alterá-la com o tempo,
+o que faz ter ganho de perfomance e evita uma série de erros.
+
+
+Folder renderization.
+
+
+Componentes e Props
+
+Componentes são como "peças de lego".
+
+Função e Classe;
+
+Props;
+
+Composição de Componentes;
+
+Extração de Componentes;
+
+
+Classes em Javascript são "protótipos".
+
+
+
+folder components
+
+Boa prática: CamelCase.
+
+Componentes: CamelCase, ex: <Component>
+
+import React from 'react' em todos os arquivos JSX.
+
+
+
+Conheça os ecossistemas do ReactJS
+
+Estado e Ciclo de Vida
+
+
+Inicialização
+
+props e state
+
+Montagem
+
+componentWillMount
+render
+componentDidMount
+
+Atualização
+
+props
+
+componentWillReceiveProps
+sholdComponentUpdate
+
+componentWillUpdate
+render
+componentDidUpdate
+
+
+
+state
+
+sholdComponentUpdate
+
+componentWillUpdate
+render
+componentDidUpdate
+
+Desmontagem
+
+componentWillUnmount
+
+
+Estado e Ciclo de Vida
+
+Nenhum component pai ou filho deve saber se outro componente possui estado ou não.
+
+O estado é apenas local ao componente e caso seja necessário enviar
+algum atributo para outro então é feito via props.
+
+
+Folder lifecycle
+
+
+React Dev Tools: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+
+Ecossistema
+
+React Router;
+Redux;
+Material UI;
+Ant-DEsign;
+Storybook;
+Gatsby;
+Jest;
+React i18n Next.
+
