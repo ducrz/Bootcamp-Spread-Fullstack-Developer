@@ -1,0 +1,77 @@
+Instrutor: Felipe Aguiar. Github: https://github.com/felipeAguiarCode
+
+
+Trabalhando com States & Effects no ReactJs
+
+Visão geral do curso
+
+O que são hooks
+
+"Ganchos"
+
+Um Hook é uma função que se "engancha" no seu componente, toda vez que o componente sofrer alguma ação
+o hook será executado.
+
+https://pt-br.reactjs.org/docs/hooks-intro.html
+
+
+Criando seu projeto
+
+react-js--state&&effects
+
+npx create-react-app aula-hooks
+
+cd aula-hooks
+
+npm start
+
+<div id="root"></div> - Coração da Aplicação.
+
+Organizando o seu projeto
+
+Components/App
+
+
+Como criar um componente sem utilizar estados
+
+Counter/Counter.js
+
+Fragment: 
+<>
+JSX
+</>
+
+Como criar um componente utilizando estados
+
+
+Hook usestate
+
+Criando um componente prático com estado
+
+Extensão ES7+ React/Redux/React-Native snippets
+
+Atalho: rfc
+
+
+
+
+Trabalhando com efeitos colaterais (useEffect)
+
+Uso de efeitos colaterais
+
+import React, { useState, useEffect } from 'react';
+
+   useEffect(() => {
+        
+    }, [])
+
+Execute este efeito, sem depender de nada.
+
+
+Conclusão do curso
+
+https://pt-br.reactjs.org
+
+https://pt-br.reactjs.org/docs/getting-started.html
+
+https://pt-br.reactjs.org/docs/hooks-intro.html
