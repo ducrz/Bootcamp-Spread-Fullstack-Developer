@@ -1,0 +1,13 @@
+Ajustes Estéticos
+
+
+Explorando o React Styled Components um pouco mais
+
+
+Abstraindo melhor nossos componentes
+
+
+Mockando uma API REST em seus testes com msw
+
+
+Evoluindo nosso projeto através do controle de estado
