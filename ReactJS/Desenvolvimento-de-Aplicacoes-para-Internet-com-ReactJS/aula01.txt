@@ -1,0 +1,201 @@
+Instrutor: Eduardo Costa. Github: https://github.com//eduardogc
+
+Desenvolvimento de aplicações para internet com ReactJS
+
+Trabalhando com estilos em elementos e componentes
+
+Introdução e objetivos da aula
+
+Aprenda sobre estilização de componentes e elementos CSS
+
+Maneiras de Estilização
+
+1- Inline;
+2- Classes;
+3- CSS in JS;
+
+
+Inline
+
+const divStyle={
+	color: 'blue',
+	backgroundImage: 'url'(' + imgUrl +')'
+};
+
+function HelloWorldComponent(){
+	return <div style={divStyle}>Hello World!</div>;
+
+}
+
+function App(){
+	return(
+		<HelloWorld style={{ marginTop: '10px' }}  />
+	)
+}
+
+
+Inline
+
+- Prós:
+	Maneira mais prática e direta;
+	Ajustes Rápidos;
+	Testes de Estilo.
+- Contras:
+	Difícil Manutenção.
+	
+	
+Classes
+
+.div-style{
+	color: blue;
+	background: url('https://bit.ly/2L8xxHZ');
+}
+
+
+import './HelloWorldComponent.css';
+
+function HelloWorldComponent(){
+	return <div className="div-style">Hello World!</div>;
+
+}
+
+
+Classes
+
+- Em JSX, define-se classes pelo atributo className.
+	Maneira mais prática e direta.
+- Contras
+	Difícil manutenção;
+	Pouca Flexibilidade;
+	Conflitos com nomes.
+	
+
+
+CSS in JS
+
+
+npm install --save styled-components
+
+
+const DivStyle = styled.div`
+	color: blue;
+	background: url('${props => props.imageUrl}');
+`;
+
+function HelloWorldComponent(){
+	const url = 'https://bit.ly/2L8xxHZ';
+	return <DivStyle imageUrl={url}></DivStyle>;
+
+}
+
+CSS in JS
+
+- Manutenção;
+	Facilidades para remover CSS;
+	Estilos dinâmicos.
+- Perfomance;
+- Injeção automática de prefixos vendor.
+
+
+Stateful vs Stateless
+
+Stateful: usa estados;
+
+Stateless: não usa estados.
+
+
+Stateful
+
+- Possui gerenciamento de estados no componente.
+
+- Construídos usando classes em JS.
+
+
+Ciclo de Vida
+
+Inicialization
+setup props and state
+
+
+Mounting
+
+componentWillMount -> render -> componentDidMount
+
+
+Updation
+
+props
+componentWillReceiveProps -> shouldComponentUpdate -> false
+				   -> true -> ComponentWillUpdate -> render -> ComponentDidUpdate
+
+states
+shouldComponentUpdate -> false
+			-> true -> componentWillUpdate -> render -> componentDidUpdate
+
+
+Unmounting
+
+componentWillUnmount
+
+
+Folder projeto/aula-1/parte-2
+
+Estados em reacts são imutáveis, toda vez que é alterado é destruído e criado uma "cópia".
+
+
+Stateless
+
+- Não possui gerenciamento de estados no componente.
+- Construídos usando funções em JS.
+
+
+Stateful vs Stateless
+
+- A nomenclatura foi atualizada.
+	- Class Components;
+	- Function Components;
+- Com hooks, estados são manipuláveis em function components!
+
+
+Introdução em Formulários no ReactJS
+
+Formulários mantêm um estado inteiro.
+
+<form>
+<label>
+	Nome:
+	<input type="text" name="nome" />
+	
+</label>
+	<input type="submit" value="Enviar" />
+</form>
+
+
+Em HTML, <input>, <textarea> e <select> têm um estado interno.
+
+Em React, podemos controlar o estado
+	- state
+	- setState
+	
+	
+Component Controlado
+
+- Tanto select, input ou textarea aceitam um atributo value;
+- Podemos mudar esse valor usando o atributo onChange.
+
+Folder projeto/aula-1/parte-3
+
+
+Component não controlado
+
+- A Tag Input é read-only.
+
+Controlled and uncontrolled form inputs in React don't have to be complicated
+
+https://goshacmd.com/controlled-vs-uncontrolled-inputs-react/
+
+Bibliotecas
+
+- Formik;
+- Redux-forms.
+

@@ -1,0 +1,491 @@
+Comunicação avançada entre aplicações
+
+Introdução da aula
+
+Rest HTTP com React
+
+APIs HTTP
+
+- Servem para conectar a um ou mais servidores HTTP
+	- GET
+	- POST
+	- DELETE
+	-PUT
+- Fetch API
+- Axios
+
+
+Fetch API
+
+- Nativa do Browser.
+
+- Oferece uma alternativa ao XMLHttpRequest() e jQuery.ajax().
+
+- Suporte a Service Workers.
+
+- Algumas diferenças:
+	Não envia nem recebe cookies (precisa definir a opção credentials)
+	Não rejeta o status do erro HTTP.
+
+Beeceptor Rest API Mocking: https://beeceptor.com
+
+https://beeceptor.com/console/react-intermediario-dio
+
+
+- GET
+
+fetch('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras')
+	.then(response => response.json())
+	.then(data => {
+		alert(`Conheça algumas cientistas brasileiras: ${data}`);
+	{)
+	.catch(error => {
+		alert('Ops! Erro a seguir: '+error);
+	
+	)};
+	
+- POST
+
+const novaCientista = { nome: 'Heleieth Saffioti', area: 'Letras'};
+fetch('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras',{
+	method: 'post',
+	body: JSON.stringigy(novaCientista)
+})
+	.then(response => response.json()))
+	.then(data => {
+		alert(``Conheça algumas cientistas brasileiras: ${data});
+	})
+	.catch( error => {
+			alert('Ops! Erro a seguir '+error);
+	});
+		
+- DELETE
+
+const novaCientista = { nome: 'Sonia Guimarães', area: 'Física'};
+fetch('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras/4',{
+	method: 'delete'
+})
+.then(response => response.json()))
+	.then(data => {
+		alert(``Conheça algumas cientistas brasileiras: ${data});
+	})
+	.catch( error => {
+			alert('Ops! Erro a seguir '+error);
+	});
+
+
+- PUT
+
+const novaCientista = { nome: 'Sonia Guimarães', area: 'Física'};
+fetch('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras/³',{
+	method: 'put',
+	body: JSON.stringify(novaCientista)
+})
+.then(response => response.json()))
+	.then(data => {
+		alert(``Conheça algumas cientistas brasileiras: ${data});
+	})
+	.catch( error => {
+		alert('Ops! Erro a seguir '+error);
+	});
+
+
+AXIOS
+
+- Lib de HTTP API
+- Cross-Browser
+- Pode monitorar o progresso de um request
+- Melhor tratamento de erros
+- Melhor teste
+
+
+Instalação
+	
+	yarn add axios
+	
+	
+GET
+
+import axios from 'axios';
+
+axios.get('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras')
+	.then(data => {
+		alert(`Conheça algumas cientistas brasileiras: ${data}`);
+	})
+	.catch(error => {
+		alert('Ops! Erro a seguir: '+error);
+	});
+
+
+POST
+
+
+import axios from 'axios';
+
+axios.post('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras',{
+	nome: 'Heleieth Saffioli',
+	area: 'letras'
+	})
+	.then(data => {
+		alert(`Conheça algumas cientistas brasileiras: ${data}`);
+	})
+	.catch(error => {
+		alert('Ops! Erro a seguir: '+error);
+	});
+	
+DELETE
+
+
+
+import axios from 'axios';
+
+axios.DELETE('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras/4')
+	.then(data => {
+		alert(`Conheça algumas cientistas brasileiras: ${data}`);
+	})
+	.catch(error => {
+		alert('Ops! Erro a seguir: '+error);
+	});
+	
+
+PUT
+
+
+import axios from 'axios';
+
+axios.put('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras/3',{
+	nome: 'Sonia Guimarães',
+	area: 'Física'
+})
+	.then(data => {
+		alert(`Conheça algumas cientistas brasileiras: ${data}`);
+	})
+	.catch(error => {
+		alert('Ops! Erro a seguir: '+error);
+	});
+	
+
+Folder aula-3/Components/Topico1.jsx
+
+
+Imutabilidade e Redux
+
+
+IMUTABILIDADE
+
+- Uma vez criada, uma coleção não pode ser alterada.
+- Novas coleções podem ser criadas a partir de uma coleção anterior e uma mutação (stter)
+como um conjunto.
+- Novas coleções são criadas usando o máximo possível da estrutura original, reduzindo a cópia e aumentando a performance.
+
+
+Benefícios:
+	* Perfomance;
+	* Programação mais simples;
+	* Debugging mais simples (detecção de mudanças).
+	
+Imutabilidade e React
+
+- Se você quer perfomance em React, use dados imutáveis.
+- Você consegue usando o shouldComponentUpdate ou React.PureComponent.
+
+class CounterButton extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {count: 1};
+}
+
+shouldComponentUpdate(nextProps, nextState){
+	if(this.props.color !== nextProps.color){
+		return true;
+	}
+	if(this.state.count !== nextState.count){
+		return true;
+	}
+	return false;
+}
+
+render(){
+	return(
+		<button
+			color={this.props.color}
+			onClick{() => this.setState(state => ({count: state.count +1}))}>
+			Count: {this.state.count}
+		</button>
+	
+	);
+
+}
+
+
+Usando Pure component
+
+
+class CounterButton extends React.PureComponent{
+	constructor(props){
+	super(props);
+	this.state = {count:1};
+	}
+	
+	render(){
+		return(
+			<button
+				color={this.props.color}
+				onClick={() => this.setState(state => ({count: state.count +1}))}>
+				Count: {this.state.count}
+			</button>
+		);
+	}
+}
+
+- Problema:
+
+	- O PureComponent vai fazer uma compração rasa entre os valores antigos e novos
+	de this.props.words.
+	- O Código muda words no handleClick do WorkAdder mas, mesmo mudando as palavras
+	elas serão consideradas como iguais.
+	
+- Solução 1:
+	- Evitar mutar valores ou estado.
+	
+	handleClick(){
+		this.setState(state => ({
+		words: [...state.words, 'marklar'],
+		}));
+	
+	};
+	
+
+Immutable.js
+
+- Biblioteca que fornece coleções persistentes e imutáveis.
+- Permite detecção barata de alterações nos objetos.
+
+Considere o seguinte trecho de código:
+
+const x = {foo: 'bar'};
+const y = x;
+
+y.foo = 'baz';
+
+x === y; //true
+
+
+O trecho poderia ser reescrito:
+
+const SomeRecord = Immutable.Record{{foo: null }};
+const x = new SomeRecord({ foo: 'bar' });
+const y = x.set('foo', 'baz');
+const z = x.set('foo', 'bar');
+
+x === y; //False
+x === z; //True
+
+
+- Outras libs:
+	* Immer;
+	* Immutability-helper;
+	* Seamless-immutable.
+
+Imutabilidade é pré-requisito no Redux.
+	- Redux e React-Redux utilizam comparações rasas.
+	- Manipulação de dados mais segura.
+	- Time-travel debugging.
+
+- Os reducers dividem o objeto de estados em domínios por uma chave;
+- combineReducers checa mudanças usando comparação rasa.
+
+1- Fazem a interação nos reducers.
+2- Criam um novo objeto de estados a partir dos estados retornados por cada reducer.
+
+- connect gera componentes que fazem comparação rasa com o estado root.
+- Retornam o valor para a função mapStateToProps, verificando aqueles que precisam de uma operação
+de re-render.
+
+- Por que não funciona com objetos mutáveis?
+
+
+
+Redux + Rest
+
+- Suponha um sistema de notificações ou um sistema de logging.
+
+- Você precisa manter a sincronia, independente da tela onde estiver.
+
+- Uma maneira de resolver fácil seria armazenar os dados do serviço no Redux.
+
+Redux Middlewares
+
+- Provê uma camada entre o disparo de uma ação e o momento que ela atinge o reducer.
+
+- Utilizados para uma variedade de funções, entre elas chamadas de APIs de serviço.
+
+
+Entendendo Middlewares
+
+- Imagine um sistema de log, onde toda action disparada  em um sistema é impressa com o log na tela.
+
+
+- Tentativa 1: Logging manual
+
+store.dispatch(addTodo('Use Redux'))
+
+const action = addTodo('Use Redux')
+
+console.log('dispatching', action)
+store.dispatch(action)
+console.log('next state', store.getState())
+
+
+- Tentativa 2: Encapsulando o dispatch
+
+function dispatchAndLog(store, action){
+	console.log('dispatching', action)
+	store.dispatch(action)
+	console.log('next state', store.getState())
+
+}
+
+dispatchAndLog(store, addTodo('Use Redux'))
+
+
+- Tentativa 3: "gambiarra" para substitui o dispatch
+
+
+const next = store.dispatch
+
+store.dispatch = function dispatchAndLog(action){
+	console.log('dispatching', action)
+	let result = next(action)
+	console.log('next state', store.getState())
+	return result
+
+}
+
+- Problema: mas, e se eu quisesse fazer outra coisa, como um crash report usando
+a mesma estrutura?
+
+
+patchToAddLogging(store)
+patchStoreToAddCrashReporting(store)
+
+
+- Tentativa 4: Escondendo a gambiarra
+
+applyMiddlewareByMonkeypatching(store, [logger, crashReporter])
+
+- Tentativa 5: Removendo a "gambiarra"
+
+function logger(store){
+	return function wrapDispatchToAddLogging(next){
+	
+	return function dispatchAndLog(action){
+		console.log('dispatching', action)
+		let result = next(action)
+		console.log('next state', store.getState())
+		return result
+}
+}
+}
+
+
+const logger = store => next => action =>{
+	console.log('dispatching', action)
+	let result = next(action)
+	console.log('next state', store.getState())
+	return result
+}
+
+const crashReporter = store => next => action => {
+	try{
+		return next(action)
+	} catch(err){
+		console.error('Caught and exception', err)
+		Raven.captureExeption(err, {
+			extra: {
+				action,
+				state: store.getState()
+	
+	}
+	})
+	throw err
+	}
+}
+
+Tentativa 6: Aplicando o Middleware manualmente:
+
+
+- 3 diferenças do applyMiddleware() do redux:
+	* Só expõe um subconjunto da Store API para o middleware: dispatch e getState()
+	* Fica difícil saber se store.dispatch(action) vai realmente percorrer a cadeia
+	do middleware de novo.
+	* Opera em cima de createStore() ao invés da store em si.
+	
+
+- Abordagem Final:
+
+
+const logger = store => next => action => {
+	console.log('dispatching', action)
+	let result = next(action)
+	console.log('next state', store.getState())
+	return result
+}
+
+const crashReporter = store => next => action => {
+	try{
+	
+	} catch(err){
+		console.error('Caught an exception!', err)
+		Raven.captureException(err, {
+		extra: {
+		action,
+		state: store.getState()	
+	}
+	
+	})
+	throw err
+}
+
+
+Abordagem Final
+
+
+import {createStore, combineReducers, applyMiddleware} from 'redux';
+
+const todoApp = combineReducers(reducers)
+const store = createStore(
+	todoApp,
+	// applyMiddleware() diz a createStore() como fazer o handling do middleware
+	applyMiddleware(logger, crashReporter)
+
+)
+
+
+Middlewares Redux
+
+- Os mais usados são:
+	- Redux-thunk;
+	- Redux-saga
+	
+	
+Redux Thunk
+
+- Um thunk é uma função que chama outra função.
+
+function some_function(){
+	// faça algo aqui
+	return function thunk(){
+		// faça algo pensado depois
+	}
+	
+
+}
+
+Instalação:
+
+	yarn add redux-thunk
+	
+- Iremos chamar a API de cientistas brasileiras para dentro do Redux.
+
+

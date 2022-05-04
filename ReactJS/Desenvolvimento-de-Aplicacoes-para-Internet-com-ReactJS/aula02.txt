@@ -1,0 +1,130 @@
+Introdução ao Redux e Fluxos da arquitetura com ReactJS
+
+Introdução aos conceitos da aula
+
+O que é Flux?
+
+Arquitetura criada pelo Facebook para comunicação entre componentes.
+
+História
+
+- Facebook tem uma área de notificações.
+
+- Quando surge uma notificação, ícone precisa ser mostrado, mas não era bem o que ocorria.
+
+- Chamados no suporte, pois notificação não funcionava.
+
+
+Até então, tinhamos alguns patterns para trafegar dados em aplicações web.
+
+Model -> View
+
+Então o Facebook criou o Flux e resolveu o problema:
+
+ACTION -> DISPATCHER -> STORE -> VIEW
+
+
+Flux é um padrão de projeto para tráfego de dados de maneira unidirecional.
+
+ARQUITETURA FLUX
+
+ACTION - É como um telégrafo: ele formata a mensagem a ser enviada.
+
+DISPATCHER - É como um telefonista, ele sabe todos os callbacks para diferentes Stores.
+
+STORE - É como um gerente super controlador. Ele guarda as informações e todas
+as alterações têm que ser feitas por ele mesmo, mais ninguém.
+
+VIEW - É como um gerente intermediário (middleware) que recebe as notificações da Store
+e passa dos dados para as visões abaixo dela.
+
+
+
+Diversas implementações:
+	- Redux (mais popular);
+	- Reflux
+	- Mobx
+	- Vuex (baseado em Redux e Elm)
+	- NgRx / Store (baseada em Redux e RxJS)
+	
+
+Bibliotecas baseadas em Flux
+
+- Servem para comunicação entre componentes;
+- Centralizam a informação;
+- "Flux libraries are like glasses: you'll know when you need then. " - Dan Abramov
+
+
+
+Conheça o Redux e como trabalhar com ele
+
+O que é Redux?
+
+
+REDUX
+
+- Criado por Dan Abramov e Andrew Clark em 2015.
+
+- Redux é uma implementação de Flux
+	- Possui algumas diferenças.
+	
+	
+React -> Action -> store -> <- reducer
+
+
+Três princípios:
+
+1- Single Source of Truth: Uma única store;
+2- State é read-only;
+3- Mudanças são feitas com pure functions.
+
+
+ACTIONS
+
+Em Redux,
+
+- Actions são como o Flux;
+- Diferença: Actions não enviam a action em si para o dispatcher;
+- Retornam um objeto de action formatado.
+
+
+STORE
+
+- Em Flux: diversas Stores
+- Em Redux: uma única Store
+- A Store aqui cuida de toda a árvore de estados
+- Os reducers que cuidam de descobrir qual estado muda
+
+REDUCERS
+- Em Redux não há dispatcher (simplifica e divide o trabalho da Store).
+- A Store conecta-se ao Root Reducer, que divide os estados em pequenos reducers para descobrir
+como lidar com esse estado.
+- Os estados aqui são imutáveis.
+
+VIEWS
+
+Em React, adiciona na camada de View 3 novos conceitos para conectar a View à Store:
+
+1- Provider;
+2- Connect();
+3- Selector.
+	
+
+Aprenda a prática de como desenvolver código com React e Redux
+
+
+Instalando o Redux
+
+npm install react-redux
+
+npm install --save-dev redux-devtools
+
+
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=pt-BR
+
+
+Folder aula-2/components e redux.
+
+
+
+

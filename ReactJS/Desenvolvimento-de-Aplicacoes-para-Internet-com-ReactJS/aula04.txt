@@ -1,0 +1,276 @@
+Conceitos Aplicados a qualidade de código e automação de testes em React
+
+Introdução a testes em React
+
+
+TDD e BDD com Jest
+
+O que é TDD?
+
+- Test-Driven Development (Desenvolvimento orientado a testes);
+- Antecipar erros a nível de desenvolvimento.
+	Teste escrito antes da funcionalidade.
+- Não descarta a presença de um tester.
+
+
+RED 1- Write a test that fail
+GREEN 2- Make the code work
+REFACTOR 3- Eliminate redundancy
+
+
+- Teste Unitário;
+- Teste End-toEnd (E2E)
+
+- Jest
+- React-testing-library
+- Shallow
+- Enzyme
+- Chai
+- Mocha
+- Selenium
+- Puppeteer
+
+
+- Teste de função
+
+// soma.js
+function soma(a,b){
+	return a + b;
+}
+Jest
+
+https://jestjs.io/pt-BR/
+
+Jasmine
+
+https://jasmine.github.io
+
+
+describe("A suite is just a function", function() {
+  var a;
+
+  it("and so is a spec", function() {
+    a = true;
+
+    expect(a).toBe(true);
+  });
+});
+    
+   
+Usando Jest:
+
+Teste de FUnção:
+
+
+import { soma } from './soma';
+
+describe('testando função soma', () => {
+	it('A soma deve dar 3', () => {
+		const res = soma(1, 2);
+		expect(res).toBe(3);
+	})
+})
+
+
+- Teste de componente
+	* Vamos uar o react-testing-library
+	
+	yarn add --dev @testing-library/react
+	
+	// para extensões de comparação no jest
+	yarn add --dev @testing-library/jest-dom/extend-expect
+	
+import React from 'react';
+
+const Basic = (props) => (
+	<p>Meu nome é {props.name}</p>
+)
+
+export default basic;
+
+Testando:
+
+import React from 'react';
+import Basic from './Basic';
+import { render } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect';
+
+describe('Testando Basic', () => {
+	if('O componente Basic deve renderizar corretamente', () =>{
+		const { baseElement } = render(<Basic name="Lilith" />);
+		expect(baseElement).toHaveTextContent("Meu nome é Lilith");
+
+	})
+})
+
+
+
+Testando Counter:
+
+import React from 'react';
+import Counter from './Counter';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { render, fireEvent } from '@testing-library/react';
+import { initialState, counterReducer } from '../../../../redux/reducers/counter';
+
+function renderWithRedux(
+	ui,
+	{ initialState, store = createStore(counterReducer, initialState)} = {}
+){
+	return {
+		...render(<Provider store ={store}>{ui}</Provider>),
+		store
+	}
+}
+describe('Testando Counter', () => {
+	it('O Componente Counter deve renderizar corretamente', () => {
+	const { getByTestId, getByText } = renderWithRedux(<Counter />)
+	fireEvent.click(getByText('+'))
+	expect(getByTestId('count-value'.textContent).toBe('1')
+})
+})
+
+
+O que é BDD?
+
+- Behavior-Driven Development(Teste baseado em Comportamento).
+
+- Teste de especificação.
+	* Une especificação, teste automatizado e premissa de teste (documento de teste)
+
+
+BDD e Sintaxe Gherkin
+
+- Sintaxe de steps para definir cenários;
+- Descreve cada funcionalidade por feature (caso de uso)
+
+# language: pt-br
+Funcionalidade: Login
+Texto com a descrição da funcionalidade
+
+Cenário: Como um usuário válido, posso logar no Sistema
+	Dado que estou na tela de login
+	Quando digitar credenciais válidas
+	E clicar no botão de login
+	Então devo acessar a Home do sistema
+Cenário: Como um usuário inválido, devo visualizar uma mensagem de erro e continuar na página de Login
+	Dado que estou na tela de login
+	Quando digitar credenciais inválidas
+	E clicar no botão login
+	Então devo ver uma mensagem de erro
+	E devo estar na tela de login
+
+
+BDD
+
+- Jest-cucumber
+- Chai
+
+Jest-cucumber
+
+https://cucumber.io/docs/gherkin/reference/
+
+yarn add --dev jest-cucumber
+
+Extensão: Cucumber no VsCode
+
+
+Folder: /projeto/src/aula-4/parte-1/components/soma/soma.feature
+						   soma.test.js
+
+Debugging
+
+- Depuração é o processo de encontrar e reduzir defeitos em um software.
+
+
+Ferramentas:
+
+	- Chrome DevTools
+	- Redux DevTools
+	- React Devtools
+
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=pt-BR
+
+
+
+Tratamento de erros
+
+- Resiliência de SW
+- Segurança
+
+
+- Tratamento em funções
+
+	export const soma = (a,b) => a + b;
+
+- Tratamento em funções
+
+	export const somaSegura = (a, b)=> {
+	
+		if(typeof a === number && typeof b === number){
+			return a+b;
+		} else{
+			// vamos convencional -1 quando soma for inválida
+			return -1;
+		}
+	}
+	
+- Tratamento em forms
+
+<form onSubmit={this.handleSubmit} style={{display: 'flex', flexDirection: 'column' }} >
+<label>
+Nome:
+<input type="text" value={this.state.value} onChange={this.handleChange} required />
+
+</label>
+<input type="submit" value="Submit" />
+</form>
+
+
+- Tratamento em retorno de APIs
+
+export const fetchCientistas = () => {
+	fetch('https://react-intermediario-dio.free.beeceptor.com/cientistas-brasileiras')
+	.then(response => response.json())
+	.then(data => {
+		setCientistas(data)
+	})
+	.catch(error => {
+		exibirMensagem(error.code);
+	});
+}
+
+
+- Tratamento em retorno de APIs
+
+	function exibirMensagem(codigo){
+		if(codigo == 401){
+			alert('Faça login para continuar')
+		}
+		if(codigo == 404){
+			alert('Recurso não encontrado.')
+		}
+		if(codigo == 500){
+			alert('Erro interno de servidor')
+		}
+	
+	}
+	
+
+- Tratamento em Componentes.
+	- Em JS usamos PropTYpes;
+	- Podemos usar linguagens tipadas como TypeScript, definindo interfaces.
+
+import React from 'react';
+import PropTypes from 'prop-types';
+
+export const Basic = ({ name }) => (
+	<p>Meu nome é {name}</p>
+)
+
+Basic.propTypes={
+	name: PropTypes.string
+
+}
