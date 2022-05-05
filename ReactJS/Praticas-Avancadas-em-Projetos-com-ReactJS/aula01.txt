@@ -1,0 +1,76 @@
+Instrutor: Bruno Carneiro.
+
+
+Práticas avançadas em projetos com ReactJS
+
+Aprofundando sobre o ciclo de vida do React
+
+
+Ciclo de Vida e suas fases
+
+Inicialização
+
+Montagem
+
+Atualização
+
+Desmontagem
+
+Ciclo de Vida
+
+.componentWillMount (deprecated 17.0)
+.componentWillReceiveProps(deprecated 17.0)
+.componentWillUpdate(deprecated 17.0)
+
+.componentDidMount
+.componentDidUpdate
+.componentDidCatch
+.componentWillUnmount
+.shouldComponentUpdate
+.getDerivedStateFromProps
+.getSnapshotBeforeUpdate
+
+Exemplos
+
+npx create-react-app advanced-reactjs-dio
+
+Folder life-cycle
+
+
+O que são Hooks e como ele pode otimizar seu código
+
+"Hooks são uma nova adição ao React 16.8.
+Eles permitem que você use o state e outros recursos do React 
+sem escrever uma classe."
+
+
+HOOKS
+
+- useState
+- useEffect
+- useCOntext
+
+- useReducer
+- useCallback
+- useMemo
+- useRef
+- useImperativeHandle
+- useLayoutEffect
+- useDebugValue
+
+
+Regras dos Hooks
+
+Não use Hooks dentro de funções Javascript comuns. Em vez disso, você pode:
+
+- Chamar Hooks em componentes React.
+- Chamar Hooks dentro de Hooks Customizados.
+Seguindo essas regras, você garante que toda lógica de estado (state) no componente
+seja claramente visível no código fonte.
+
+
+
+Context API
+
+Folder context-api
+

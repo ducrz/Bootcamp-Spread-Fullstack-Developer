@@ -1,0 +1,67 @@
+Técnicas com Components e DOM
+
+Por que trabalhar com Fragments
+
+Fragments
+
+"Um padrão comum no React é que um componente pode retornar múltiplos elementos.
+Os Fragmentos permitem agrupar uma lista de filhos sem adicionar nós extras ao dom."
+
+Folder: fragments
+
+
+Error Boundaries
+
+"Um erro de Javascript em uma parte da UI não deve quebrar toda a aplicação.
+Para resolver este problema para usuários do React, o React 16 introduziu um novo conceito
+de "error boundary"."
+
+Folder error-boundaries
+
+
+Error boundaries não capturam erros em:
+
+- Manipuladores de evento;
+- Código assíncrono (ex: callbacks de setTimeout ou requestAnimationFrame));
+- Renderização no servidor;
+- Erros lançados na própria error boundary (ao invés de em seus filhos);
+
+
+Render Props
+
+"O termo "render prop" refere-se a uma técnica de compartilhar código entre componentes React
+passando uma prop cujo valor é uma função.
+
+Um componente com uma render prop recebe uma função que retorna um elemento
+React e a invoca no momento de renderização, não sendo necessário para o componente
+implementar uma lógica própria."
+
+Folder: render-props
+
+
+
+Typechecking com PropTypes
+
+
+Typechecking
+
+"Na medida em que sua aplicação cresce, você pode capturar muitos bugs com checagem de tipos.
+Em algumas aplicações, você pode usar extensões do Javascript como Flow ou TypeScript para checar
+os tipos de toda a sua aplicação. Porém, mesmo se você não usá-las, React possui algumas
+habilidades de checagem de tipos nativas."
+
+
+Folder type-checking
+
+
+Refs e DOM
+
+Com Reds é possível acessar a árvore do DOM e/ou elementos React.
+
+Quando utilizar:
+
+- Manipulação de bibliotecas de terceiros;
+- Gerenciamento de inputs (foco), seleção de textos ou reprodução de mídias.
+- Animações imperativas.
+
+Folder refs-dom
