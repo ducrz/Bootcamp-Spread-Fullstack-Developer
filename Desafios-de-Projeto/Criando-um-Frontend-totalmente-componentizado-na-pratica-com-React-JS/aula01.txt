@@ -1,0 +1,193 @@
+Instrutor: Matheus Benites. Github: https://github.com/benits
+
+Criando um front-end totalmente componentizado na prática com ReactJS
+
+
+Agora é a sua hora! Crie uma solução com React que explore os conceitos apresentados nesse Desafio de Projetos. Para isso, você pode reproduzir o aplicação criada pelo expert ou, caso se sinta preparado, desenvolver algo do zero. Dica: você pode dar um "fork" no repositório disponibilizado pelo expert para organizar melhor as suas alterações e evoluções, mantendo uma referência direta ao código original.
+
+Introdução
+
+Playlist: https://www.youtube.com/watch?v=F1HqLD6TgCw&list=PLTv2Rbwcr_Cru7KIHcffE1Shg9X9Eix7a
+
+Entendendo a Responsabilidade
+
+ReactJS
+
+Quanto menor a responsabilidade de um componente, melhor é para dar manutenção, para manter o código, para escalar.
+
+
+Responsabilidade
+
+O ideal é que cada componente tenha uma única responsabilidade.
+
+
+Por que componentizar?
+
+- Responsabilidade;
+- Manutenção mais fácil;
+- Reusabilidade;
+- Extensibilidade;
+- Melhor leitura de código.
+
+
+Dividindo Responsabilidades
+
+Github App
+
+Profile
+
+- Avatar
+- username/name
+- user status count
+
+Repositories
+- Repositories
+	- List of Repo
+- Starred
+	- List of Starred
+
+
+Como Ficaria no React
+
+const App = () => {
+
+	return (
+		<Layout>
+			<Profile />
+			<Repositories />
+		</Layout>
+	);
+};
+
+export default App;
+
+
+
+Transformando a interface em Lego
+
+Quebrando os componentes do React em componentes menores.
+
+
+Como Quebrar os Componentes?
+
+Não esquecer de separar bem a responsabilidade e montar de uma forma que seja reutilizável.
+
+The Key is "reusable!".
+
+
+Dividindo Componentes
+
+const GithubApp = () => {
+	Get all data of user...
+	
+	return(
+		<Profile>
+			infos of profile
+		</Profile>
+		<Repos>
+			infos of Repos
+		</Repos>
+	)
+}
+
+
+const GithubApp = () => {
+
+	return(
+		<Layout>
+			</Profile>
+			</Repos>
+		</Layout>
+	)
+}
+
+
+const Profile = () {
+Get info for profile as user...
+	return(
+		<div>
+			infos os profile
+			of users
+		</div>
+	)
+}
+
+const Repos = () => {
+Get info for repos of user...
+return(
+	<div>
+		infos of repos
+		of users
+	</div>
+)
+}
+
+Transformando nosso lego em Interface
+
+Remontando nossa interface
+
+O que Construímos?
+
+- Layout
+	- Profile;
+	- Repositories;
+	- Starred;
+	- Repos.
+
+
+No projeto yarn start.
+
+API Github: https://docs.github.com/pt/rest
+
+https://api.github.com/users/ducrz
+https://api.github.com/users/ducrz/repos
+
+Criando componentes e explorando o React Hooks
+
+github-provider.js
+
+AXIOS
+
+api.js
+
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "https://api.github.com/",
+});
+
+export default api;
+
+
+Refinando ainda mais nossos componentes
+
+
+Playlist Criando Interface Componentizada:
+ https://bit.ly/playlist-interface-componentizada
+
+Dúvidas - Parte 1
+
+Dúvidas - Parte 2
+
+React Router Dom: https://v5.reactrouter.com/web/guides/quick-start
+
+Conselhos para quem está começando com ReactJS
+
+Entendendo o Desafio
+
+Alterações Feitas:
+
+* Atualizações das dependências para versões atualizadas;
+* Ajustando para PT-BR;
+* Mudança de estilo via CSS;
+* Criação de deploy de produção.
+
+
+
+
+
+
+
+
+
+
