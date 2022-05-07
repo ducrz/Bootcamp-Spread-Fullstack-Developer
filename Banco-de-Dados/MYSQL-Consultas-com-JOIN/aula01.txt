@@ -1,0 +1,38 @@
+Instrutora: Nathally Souza.
+
+MYSQL - Consultas com JOIN
+
+- Realizar consultas em várias tabelas.
+
+- Entender o INNER JOIN e OUTTER JOIN
+
+- Entender as cláusulas LEFT e RIGHT
+
+
+Modelo UNION
+
+- Unir várias consultas diferentes.
+
+
+
+Apresentação da estrutura inicial do banco de dados
+
+
+Realizando consultas com comandos JOIN e AS
+
+
+Implementando múltiplos comandos JOIN
+
+
+
+Conceito inicial sobre RIGHT e LEFT JOIN
+
+
+Praticando consultas com RIGHT e LEFT JOIN
+
+
+Inserindo novos dados com tabelas relacionadas
+
+
+Realizando consultas com comando WHERE e conclusão da aula
+
