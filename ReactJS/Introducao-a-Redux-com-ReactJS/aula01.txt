@@ -1,0 +1,294 @@
+Instrutor: Renato Benkendorf. Github: https://github.com/renatobenks
+
+
+Introdução a Redux com ReactJS
+
+
+Desmitificando Redux e React
+
+Introdução e objetivos
+
+Gerenciando estados de componentes em outro nível.
+
+
+Conceitos e influências do Redux e React
+
+1- Desmistificando Redux ao React
+1.1 - Diferenças entre React e Redux
+
+
+1.1.1 Desmistificando React
+
+"A Javascript library for building user interfaces."
+
+- Declarativo
+- Baseado em componentes
+- Aprenda uma vez, escreva em qualquer lugar
+
+
+1.1.2  Desmistificando Redux
+
+"A predictable state container for JS Apps"
+
+State containers são um bloco (container) da sua aplicação que armazena um estado
+de forma centralizada, que pode ser lido por outros blocos da aplicação.
+
+- Previsível
+- Centralizado
+- Debugável
+- Flexível
+
+
+1.2 Contexto por trás do Redux
+
+1.2.1 Inspirado no Flux e Elm
+
+
+Flux - Arquitetura criada pelo Facebook, criada para unificação de controle de estado.
+
+Elm - Linguagem funcional desenvolvida para escrever código funcional que interaja com o DOM
+e trabalha com operações imutáveis.
+
+
+1.2.2 Influência da linguagem elm
+
+- Imutabilidade;
+- API declarativa;
+- Operações determinísticas;
+- Controlar side-effects (quando não pode-se evitá-los)
+
+
+
+A influência da arquitetura flux
+
+1.2.3 Influência da arquitetura flux
+
+MVC Architecture
+
+
+
+Flux Architecture
+
+View -> Actions -> Dispatcher -> Store(s)
+
+
+
+Redux Architecture
+
+Actions -> Reducer -> Store
+	  <- View <-
+
+
+
+
+Os três princípios e os aspectos da arquitetura
+
+1.3 Arquitetura
+
+1.3.1 "Os três princípios"
+
+- Uma única fonte de verdade; -> store
+- Estado disponível apenas para leitura. -> Reducer -> Store
+- Mudanças no estado são feitas apenas por funções puras
+
+Actions -> Reducer -> Store
+
+
+1.3.2 Aspectos (API)
+
+- reducer: store.getState() -> Reducer ->
+
+
+function counterReducer(state = { value:0 }, action){
+	switch(action.type){
+		case 'counter/incremented':
+			return { value: state.value +1 }
+		case 'counter/decremented':
+			return { value: state.value -1 }
+		default:
+			return state
+}
+
+}
+
+store: createStore() -> Reducer -> Store
+
+
+const store = createStore(counterReducer);
+
+
+actions: store.dispatch() Actions -> Reducer -> Store
+
+
+store.dispatch({ type: 'counter/incremented' }) // {value: 1}
+store.dispatch({ type: 'counter/incremented' }) // {value: 2}		
+store.dispatch({ type: 'counter/decremented' }) // {value: 1}
+
+view: connect (react-redux) Actions -> Reducer -> Store -> View
+				<-  			   <-
+				
+				
+TodoList.js
+
+function TodoList(){
+	return (
+		// ...renders something
+	)
+}
+
+function mapStateToProps(state){
+	return { todoList: state.todos.allIds};
+}
+
+export default connect(mapStateToProps)(TodoList)
+
+
+function TodoList({todoList}){
+	return (
+		// ...renders something
+	)
+}
+
+function TodoList({todoList, dispatch}){
+	return (
+		// ...renders something and dispatch an action
+	)
+}
+
+
+
+function mapDispatchToProps(dispatch){
+
+	return {
+		toogleTodo: (id) => dispatch ({ type: 'todos/toggle', payload: id}),
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList)
+
+
+
+const TodoList = ({ todoList, toggleTodo }) => {
+
+	return (
+		// renders todos and toogleTodo
+	)
+};
+
+
+- view: connect (react-redux)
+	- selectors
+	
+
+function selectTodoList(state){
+
+	return state.todos.allIds;
+}
+
+function mapStateToProps(state){
+	return{
+		todoList: selectTodoList(state)
+	}
+
+}
+
+O que são middlewares e enhanced stores
+
+1.3.3 Middlewares
+
+"It provides a third-party extension point between dispatching
+an action, and the moment it reaches the reducer"
+
+type MiddlewareAPI = { dispatch: Dispatch, getState: () => State}
+type Middleware = (api: MiddlewareAPI) => (next: Dispatch) => Dispatch
+
+
+function logger({ getState }) {
+	return next => action =>{
+		console.log('will dispatch', action)
+		
+		const returnValue= next(action)
+		
+		console.log('state after dispatch', getState())
+		
+		return returnValue
+	}
+}
+
+const store = createStore(reducer, {}, applyMiddleware(logger))
+
+type StoreEnhancer = (next: StoreCreator) => StoreCreator
+
+
+
+Visão geral de um projeto React com Redux
+
+1.4 Começando um Projeto
+
+npx create-react-app my-app --template redux
+
+
+
+O que é o reduxjs/toolkit
+
+1.4.1 @reduxjs/toolkit
+
+- "Configuring a Redux store is too complicated"
+- "I have to add a lot of packages to get Redux to do anything useful"
+- "Redux requires too much boilerplate code"
+
+
+# NPM
+npm install @reduxjs/toolkit
+
+# Yarn
+
+yarn add @reduxjs/toolkit
+
+
+- configureStore (redux-thunk + Redux DevTools Extension)
+
+
+import {configureStore} from '@reduxjs/toolkit'
+
+import rootReducer from './reducers'
+
+const store = configureStore ({ reducer: rootReducer })
+
+
+
+- createReducer (immer.js)
+- createAction
+- createSlice (reducers + actions)
+- createSelector (reselect)
+
+
+Alternativas de state containers e conclusão da aula
+
+
+1.5  Alternativas de state containers
+
+- Context API (React)
+- Recoil (FB)
+- MobX (redux-saga, RxJS)
+- XState
+
+1.6 Prós e contras de state containers
+
+Prós:
+- simplifica problemas de data-flow complexos
+- pontos únicos de controle de estado
+
+
+Contras
+- complica problemas de data-flow simples
+
+Conclusão
+
+- Super poderoso, mas pode ser custoso.
+- super extensível, mas precisa de clareza.
+- state containers resolvem problemas não triviais
+- flexível para resolver vários problemas, mas talvez não o seu
+- propósito do redux é muito diferente do react e, pode ser usado em outras soluções.
+
+

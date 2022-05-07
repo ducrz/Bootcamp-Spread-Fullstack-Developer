@@ -1,0 +1,125 @@
+Gerenciando a Store com Redux
+
+
+Developer Experience
+
+2.1.1 Redux Devtools
+
+- window._REDUX_DEVTOOLS_EXTENSION_(Google Chrome)
+- redux-devtools-extension
+
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=pt-BR
+
+Quais são as melhores práticas
+
+2.2 Melhores Práticas
+
+Redux Style Guide: https://redux.js.org/style-guide/
+
+- Priority A: Essential
+- Priority B: Strongly Recommended
+- Priority C: Recommended
+
+
+- Priority A: Essential
+	- "Do Not Mutate State"
+	- "Reducers Must Not Have Side Effects"
+	- "Do Not Put Non-Serializable Values in State or Actions"
+	- "Only One Redux Store Per App"
+	
+
+
+Ducks Pattern e High-Order-Reducers
+
+2.3 Design Patterns
+
+
+2.3.1 "Ducks" pattern
+
+
+"To me, it makes more sense for these pieces to be bundled together in a isolated module that is self contained, and can even be packaged easily into a library."
+
+1. MUST export default a function called reducer()
+2. MUST export its action creators as functions
+3. MUST have action types in the form npm-module-or-app/reducer/ACTION_TYPE
+4. MAY export its action types as UPPER_SNAKE_CASE, if an external reducer needs to listen for them, or if it is a published reusable library
+
+
+// widgets.js
+
+// Actions
+const LOAD   = 'my-app/widgets/LOAD';
+const CREATE = 'my-app/widgets/CREATE';
+const UPDATE = 'my-app/widgets/UPDATE';
+const REMOVE = 'my-app/widgets/REMOVE';
+
+// Reducer
+export default function reducer(state = {}, action = {}) {
+  switch (action.type) {
+    // do reducer stuff
+    default: return state;
+  }
+}
+
+// Action Creators
+export function loadWidgets() {
+  return { type: LOAD };
+}
+
+export function createWidget(widget) {
+  return { type: CREATE, widget };
+}
+
+export function updateWidget(widget) {
+  return { type: UPDATE, widget };
+}
+
+export function removeWidget(widget) {
+  return { type: REMOVE, widget };
+}
+
+// side effects, only as applicable
+// e.g. thunks, epics, etc
+export function getWidget () {
+  return dispatch => get('/widget').then(widget => dispatch(updateWidget(widget)))
+}
+
+
+2.3.2 Higher-Order-Reducers
+
+const withPagination = (section, reducer) => (state, action) => {
+	switch(action.type){
+		case `${section}_GO_NEXT_PAGE`: {
+			return { ...state, page: state.page +1}
+		}
+		
+		// Other actions...
+		default: {
+			return reducer(state, action);
+			
+		}
+	}
+};
+
+
+export default createStore(
+	combineReducers({
+		users: withPagination('USERS', users),
+		articles: withPagination('ARTICLES', articles),
+		login,
+	})
+);
+
+
+
+Component Containers
+
+2.3.3 Component Containers
+
+Hooks everywhere
+
+2.4 Hooks Everywhere
+
+
+Conclusão e comentários do curso
+
