@@ -1,0 +1,71 @@
+Instrutora: Nathally Souza. 
+MySql - Trabalhando com as suas primeiras tabelas
+
+Introdução ao curso e conceitos iniciais sobre modelo relacional
+
+Objetivo do curso
+
+Criar uma tabela e manipular seus dados com comandos MySQL
+no phpMyAdmin
+
+Criar uma tabela
+
+Inserir dados
+
+Consultar dados
+
+Deletar dados
+
+Modelo relacional
+
+
+O modelo relacional surge na década de 60, proposto por proposto por Edgar Codd
+
+As chaves permitem o relacionamento entre os dados
+
+
+Porque usar tabelas?
+
+Dados organizados de forma estruturada
+
+Consulta e manipulação de dados simplificadas
+
+Dados atômicos
+
+
+
+Ferramentas e configuração do ambiente
+
+MySQL - banco de dados gratuito
+
+phpMyAdmin - sistema gerenciador de banco de dados
+
+
+Configurando o ambiente
+
+
+
+Criando tabelas
+
+aula01.sql
+
+
+CREATE TABLE
+
+Tipos: INT, VARCHAR, DATETIME
+
+
+Inserindo dados na tabela
+
+Inserindo dados
+
+INSERT INTO
+
+Indicar as colunas que serão preenchidas e os respectivos
+valores
+
+
+
+Dicas e dúvidas
+
+
