@@ -1,0 +1,66 @@
+Instrutor Henrique Schreiner.
+
+Introdução ao Node.JS com Express
+
+Aprenda sobre os conceitos de Node.js e crie um ambiente
+
+
+Origem do Node.js
+
+https://nodejs.org/en/
+
+- Criado em 2009 por Ryan Dahl;
+- Combina a máquina virtual Javascript V8, Event Loop e a libuv;
+- Usa o Javascript como linguagem de programação;
+- É guiado a eventos (Event Drive).
+
+V8 + libuv = Node.js
+
+Características do Node.js
+
+- É um ambiente de servidor de código aberto;
+- Gratuito para uso;
+- É executado em várias plataformas (Windows, Linux, Unix, Mac OS X, etc.)
+- É Javascript no servidor;
+- Evento Loop (Loop de Eventos);
+- Assincronicidade;
+- Processos de I/O não bloqueante;
+- Alta perfomance (quando bem estruturado);
+
+
+Event Loop
+
+
+Instalação do Node.js
+
+https://nodejs.org/en/download/
+
+sudo apt-get install nodejs
+
+node index.js
+
+
+Criando uma API com Express
+
+
+O que é o Express?
+
+- Framework web minimalista e rápido para Node.js;
+- Fornece uma estrutura e conjunto de recursos robustos para aplicações web e mobile;
+- Dispõe de métodos utilitários HTTP e middlewares para criar uma API rápida e segura;
+
+
+npm install express --save
+
+npm init
+
+
+Atividade Prática:
+
+- Criar uma endpoint para users:
+	- Listar usuários (GET);
+	- Criar usuário (POST);
+	- Modificar Usuário (PUT);
+	- Remover usuário (DELETE).
+	
+Postman
