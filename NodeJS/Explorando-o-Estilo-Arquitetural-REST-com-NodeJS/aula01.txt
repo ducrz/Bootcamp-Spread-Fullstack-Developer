@@ -1,0 +1,77 @@
+Instrutor: Renan Johannsen. GitHub: https://github.com/RenanJPaula
+
+https://docs.google.com/presentation/d/1xcmu1IRAfPiWWEB6Y93ioVhup1McR3VY/edit#slide=id.p2
+
+Explorando o Estilo Arquitetural REST com Node.js
+
+Entendendo e preparando seu projeto
+
+
+Apresentação inicial
+
+Conteúdo previsto
+
+Como funciona a API Rest do projeto
+
+API REST
+
+						Node Js
+Aplicações Clientes  				MS de Autenticação
+			Login no Sistema
+			-------->
+			
+			Token JWT de Autenticação
+			<--------
+
+
+Aplicações de Clientes		MS de Produtos			MS de Autenticação
+
+	Lista de Produtos		Token Válido?
+	--------------->		------------->
+	
+	Lista de Produtos		Sim ou Não?
+	<----------------		<-------------		
+			
+
+
+MS de autenticação
+
+CRUD de Usuários
+
+GET /users
+GET /users/:uuid
+POST /users
+PUT /users/:uuid
+DELETE /users/:uuid
+
+Autenticação
+
+POST /token
+POST /token/validate
+
+
+Próximos Passos
+
+Neste conteúdo, conhecemos o estilo arquitetural REST. Assim, foi possível criar uma API REST na prática usando Node.js e Express. O que vem por aí?
+Node.js com Bancos de Dados Relacionais (SQL)
+Microsserviços e Integrações com Node.js
+
+
+Requisitos para o desenvolvimento
+
+Folder dio-node-user-authentication-api
+
+
+Criando um projeto com node e Hello world!
+
+Folder live-01
+
+npm init
+
+Entendendo a estrutura do Typescript
+
+tsc --init
+
+Como desenvolver em Typescript
+
+

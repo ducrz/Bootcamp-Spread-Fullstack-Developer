@@ -1,0 +1,33 @@
+Desenvolvendo o Projeto
+
+Criando um servidor com express
+
+npm run build
+
+Automatizando o servidor para identificar alterações no código
+
+npm install --save-dev ts-node-dev
+
+Introdução ao desenvolvimento do CRUD de usuários
+
+
+Implementando rota por id de usuário
+
+
+Facilitando o uso de statusCode no seu código
+
+
+Desenvolvendo e testando o método post
+
+
+
+https://insomnia.rest/download
+
+Desenvolvendo e testando o método put e delete
+
+
+Refatorando a rota de status
+
+
+Dúvidas e comentários finais
+
