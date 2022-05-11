@@ -1,0 +1,26 @@
+Instrutor: Renan Johannsen
+
+Node.js com Bancos de Dados Relacionais (SQL)
+
+Como Fazer sua Conexão de Banco de Dados com Node
+
+Apresentação do projeto de base e proposta de conteúdo
+
+Folder live-02
+
+Configuração inicial do node-postgres
+
+https://www.npmjs.com/package/pg
+
+npm install --save-dev @types/pg
+
+
+Primeiros passos para a criação do banco de dados e tabelas
+
+https://www.elephantsql.com
+
+Criando a estrutura básica para conexão com banco de dados
+
+Realizando uma consulta de usuários
+
+Revisão da conexão com o banco de dados e criação de pool de conexões

@@ -1,0 +1,14 @@
+Criando as funções de manipulação da tabela de usuários
+
+Desenvolvendo a consulta de usuários por id
+
+Desenvolvendo a inserção de usuários
+
+Desenvolvendo o update e o delete de usuários
+
+Comentários sobre injeção de dependência
+
+Realizando tratamento de erros
+
+Desenvolvendo um Error Handling
+
