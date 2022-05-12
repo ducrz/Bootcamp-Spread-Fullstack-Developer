@@ -1,0 +1,67 @@
+Instrutora: Alexia Pereira. 
+
+Construindo Encurtador de URL
+
+DESCRIÇÃO
+
+Neste projeto desenvolva seu próprio encurtador de url a partir da construção de uma API com NodeJS, Typescript e MongoDB para a base de dados.
+
+Parte 1
+
+Typescript
+Linguagem Base
+
+
+TypeScript é um superconjunto de Javascript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos da linguagem.
+
+
+Mongo DB
+Base de dados
+
+MongoDB é um banco de dados NoSQL orientado à documentos.
+
+MongoDB Atlas Database
+https://www.mongodb.com/atlas/database
+
+Cluster: url-shortner-dio
+
+npm i typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint
+npm i nodemon express cors
+
+
+Folder: url-shortner-dio
+
+
+
+Parte 2
+
+npm run build:watch
+
+npm run dev
+
+
+Parte 3
+
+npm install --save shortid
+
+Insomnia
+
+POST
+
+http://localhost:5000/shorten
+
+JSON
+{
+	"originURL":
+	"https://www.dio.me"
+}
+
+
+Parte 4
+
+
+
+
+
+
+
